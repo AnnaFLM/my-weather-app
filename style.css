@@ -1,0 +1,105 @@
+.container {
+  width: 50%;
+  opacity: 1;
+  padding: 30px;
+  margin: 30px auto;
+  border: 0;
+  border-radius: 10px;
+  box-shadow: 4px 4px 10px 1px rgb(0 0 0 / 15%);
+  text-align: center;
+  font-family: "Quicksand", sans-serif;
+  background-image: linear-gradient(to top, #accbee 0%, #e7f0fd 100%);
+}
+
+h1,
+h2,
+h3,
+p {
+  text-align: center;
+}
+h1 {
+  font-size: 30px;
+}
+h2,
+h3 {
+  font-size: 80px;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+  display: block;
+}
+li {
+  display: inline;
+}
+
+.emojis {
+  text-align: center;
+}
+.humid {
+  margin: 35px;
+}
+.temp {
+  margin: 35px;
+}
+.wind {
+  margin: 35px;
+}
+.degrees {
+  font-size: 35px;
+}
+
+.row {
+  text-align: left;
+}
+
+.fa-cloud-sun {
+  text-align: center;
+  display: block;
+}
+
+.fa-cloud {
+  text-align: center;
+  display: block;
+}
+
+.fa-cloud-showers-heavy {
+  text-align: center;
+  display: block;
+}
+
+.min {
+  text-align: right;
+  display: block;
+}
+
+#city-input {
+  border: 0;
+}
+
+#search-button,
+#location-button {
+  border: 0;
+  background-color: lightgrey;
+}
+
+#percent {
+  position: relative;
+  right: 20px;
+}
+
+#degree-max {
+  position: relative;
+  right: -20px;
+}
+
+#speed {
+  position: relative;
+  left: 45px;
+}

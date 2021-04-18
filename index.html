@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/55906d4558.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Weather App</title>
+  </head>
+  <body>
+    <div class="container">
+      <form id="location-input">
+        <input
+          type="text"
+          id="city-input"
+          placeholder="Enter location"
+          autofocus="on"
+        />
+        <input type="submit" id="search-button" value="Search" />
+        <input type="submit" id="location-button" value="Current location" />
+      </form>
+
+      <br />
+      <h1 id="city"><strong>Frankfurt, DE</strong></h1>
+      <p id="currentDate">
+        Sunday, 21 March 2021
+        <br />
+        8.30 pm
+      </p>
+      <h2>
+        <span id="temperature">8</span>
+        <span class="degrees">°C </span>
+      </h2>
+      <h3>
+        <i class="fas fa-cloud"></i>
+      </h3>
+      <p id="description">cloudy</p>
+      <br />
+
+      <div class="emojis">
+        <span class="humid"><i class="fas fa-tint"></i></span>
+        <span class="temp"><i class="fas fa-temperature-high"></i></span>
+        <span class="wind"><i class="fas fa-wind"></i></span>
+      </div>
+      <div class="values">
+        <span id="percent">78</span>% <span id="degree">12</span>°
+        <span id="speed">12-28</span>km/h
+      </div>
+      <hr />
+      <br />
+      <br />
+      <div class="row justify-content-center">
+        <div class="col-sm-2">Monday</div>
+        <div class="col-sm-2"><i class="fas fa-cloud"></i></div>
+        <div class="col-sm-2">
+          <span class="min"><strong>8°</strong> / -1°</span>
+        </div>
+        <hr />
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-sm-2">Tuesday</div>
+        <div class="col-sm-2"><i class="fas fa-cloud-sun"></i></div>
+        <div class="col-sm-2">
+          <span class="min"><strong>9°</strong> / 2°</span>
+        </div>
+        <hr />
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-sm-2">Wednesday</div>
+        <div class="col-sm-2"><i class="fas fa-cloud-showers-heavy"></i></div>
+        <div class="col-sm-2">
+          <span class="min"><strong>7°</strong> / -1°</span>
+        </div>
+        <hr />
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-sm-2">Thursday</div>
+        <div class="col-sm-2"><i class="fas fa-cloud-showers-heavy"></i></div>
+        <div class="col-sm-2">
+          <span class="min"><strong>7°</strong> / 0°</span>
+        </div>
+        <hr />
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-sm-2">Friday</div>
+        <div class="col-sm-2"><i class="fas fa-cloud-sun"></i></div>
+        <div class="col-sm-2">
+          <span class="min"><strong>7°</strong> / -1°</span>
+        </div>
+        <hr />
+      </div>
+    </div>
+    <footer>
+      <link rel="stylesheet" href="style.css" />
+      <script src="index.js"></script>
+    </footer>
+  </body>
+</html>
