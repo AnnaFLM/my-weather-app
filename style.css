@@ -25,18 +25,9 @@ h3 {
   font-size: 80px;
 }
 
-a {
-  text-decoration: none;
-}
-
-ul {
-  list-style: none;
-  padding: 0;
-  text-align: center;
+.developer {
   display: block;
-}
-li {
-  display: inline;
+  text-align: center;
 }
 
 .emojis {
