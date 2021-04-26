@@ -24,6 +24,16 @@ h2 {
   font-size: 80px;
 }
 
+a {
+  text-decoration: none;
+  cursor: default;
+  color: black;
+}
+
+.active {
+  color: black;
+}
+
 .developer {
   display: block;
   text-align: center;
@@ -42,7 +52,7 @@ h2 {
   margin: 35px;
 }
 .degrees {
-  font-size: 35px;
+  font-size: 25px;
 }
 
 .row {
