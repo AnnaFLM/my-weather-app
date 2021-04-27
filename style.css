@@ -24,19 +24,13 @@ h2 {
   font-size: 80px;
 }
 
-a {
-  text-decoration: none;
-  cursor: default;
-  color: black;
-}
-
-.active {
-  color: black;
-}
-
 .developer {
   display: block;
   text-align: center;
+}
+
+.img {
+  font-size: 350px;
 }
 
 .emojis {
@@ -54,7 +48,6 @@ a {
 .degrees {
   font-size: 25px;
 }
-
 .row {
   text-align: left;
 }
@@ -83,14 +76,17 @@ a {
   border: 0;
 }
 
+#celsius-link,
+#fahrenheit-link {
+  text-decoration: none;
+  cursor: default;
+  color: black;
+}
+
 #search-button,
 #location-button {
   border: 0;
   background-color: lightgrey;
-}
-
-#icon {
-  font-size: 250px;
 }
 
 #percent {
