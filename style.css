@@ -23,32 +23,21 @@ h1 {
 h2 {
   font-size: 80px;
 }
-
-.developer {
-  display: block;
-  text-align: center;
+.degrees {
+  font-size: 25px;
 }
 
 .img {
   font-size: 350px;
 }
 
-.emojis {
+.weather-info {
   text-align: center;
+
+  justify-content: center;
 }
-.humid {
-  margin: 35px;
-}
-.temp {
-  margin: 35px;
-}
-.wind {
-  margin: 35px;
-}
-.degrees {
-  font-size: 25px;
-}
-.row {
+
+.weather-forecast {
   text-align: left;
 }
 
@@ -89,17 +78,7 @@ h2 {
   background-color: lightgrey;
 }
 
-#percent {
-  position: relative;
-  right: 20px;
-}
-
-#degree-max {
-  position: relative;
-  right: -20px;
-}
-
-#speed {
-  position: relative;
-  left: 45px;
+.developer {
+  display: block;
+  text-align: center;
 }
