@@ -24,6 +24,8 @@ function displayWeather(response) {
   iconElement.setAttribute("alt", response.data.weather[0].description);
 
   celsiusTemperature = response.data.main.temp;
+
+  getForecast(response.data.cord);
 }
 
 function searchCity(city) {
@@ -63,6 +65,34 @@ function showCelsius(event) {
   temperature.innerHTML = Math.round(celsiusTemperature);
 }
 
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
+
+  let forecastHTML = `<div class="row">`;
+  let days = ["Mon", "Tue", "Wed", "Thu"];
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      `
+    <div class="col-2">
+    <div class="forecast-day">${day}</div>
+      <img
+        src="http://openweathermap.org/img/wn/10d@2x.png"
+        alt="sunny"
+        width="60"
+      />
+      <div class ="forecast-temp">
+      <span class="forecast-temp-max"> 18° </span>
+      <span class="forecast-temp-min"> 12° </span>
+    </div>
+    </div>
+  `;
+  });
+
+  forecastHTML = forecastHTML + `</div>`;
+  forecastElement.innerHTML = forecastHTML;
+}
+
 let celsiusTemperature = null;
 
 let celsiusLink = document.querySelector("#celsius-link");
@@ -78,6 +108,7 @@ let locationButton = document.querySelector("#location-button");
 locationButton.addEventListener("click", getCurrentLocation);
 
 searchCity("Berlin");
+displayForecast();
 
 let now = new Date();
 let hours = (now.getHours() < 10 ? "0" : "") + now.getHours();
