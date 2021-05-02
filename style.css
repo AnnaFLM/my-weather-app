@@ -27,38 +27,16 @@ h2 {
   font-size: 25px;
 }
 
-.img {
-  font-size: 350px;
-}
-
-.weather-info {
+weather-info {
   text-align: center;
-
-  justify-content: center;
 }
 
 .weather-forecast {
-  text-align: left;
-}
-
-.fa-cloud-sun {
   text-align: center;
-  display: block;
 }
 
-.fa-cloud {
-  text-align: center;
-  display: block;
-}
-
-.fa-cloud-showers-heavy {
-  text-align: center;
-  display: block;
-}
-
-.min {
-  text-align: right;
-  display: block;
+.forecast-temp-min {
+  opacity: 0.6;
 }
 
 #city-input {
