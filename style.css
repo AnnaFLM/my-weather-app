@@ -23,12 +23,13 @@ h1 {
 h2 {
   font-size: 80px;
 }
-.degrees {
-  font-size: 25px;
-}
 
 weather-info {
   text-align: center;
+}
+
+.degrees {
+  font-size: 25px;
 }
 
 .weather-forecast {
@@ -43,17 +44,15 @@ weather-info {
   border: 0;
 }
 
-#celsius-link,
-#fahrenheit-link {
-  text-decoration: none;
-  cursor: default;
-  color: black;
-}
-
 #search-button,
 #location-button {
   border: 0;
   background-color: lightgrey;
+}
+
+#degree-min,
+#degree-symbol {
+  opacity: 0.6;
 }
 
 .developer {

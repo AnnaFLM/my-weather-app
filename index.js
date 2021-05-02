@@ -13,8 +13,11 @@ function displayWeather(response) {
     response.data.main.temp
   );
   document.querySelector("#percent").innerHTML = response.data.main.humidity;
-  document.querySelector("#degree").innerHTML = Math.round(
+  document.querySelector("#degree-max").innerHTML = Math.round(
     response.data.main.temp_max
+  );
+  document.querySelector("#degree-min").innerHTML = Math.round(
+    response.data.main.temp_min
   );
 
   document.querySelector("#speed").innerHTML = Math.round(
