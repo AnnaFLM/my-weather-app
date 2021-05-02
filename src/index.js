@@ -1,13 +1,10 @@
 function getForecast(coordinates) {
-  console.log(coordinates);
   let apiKey = "c383ea970c0b6605f15ecef4e8d3a578";
   let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&exclude={part}&appid=${apiKey}&units=metric`;
   console.log(apiUrl);
   axios.get(apiUrl).then(displayForecast);
 }
-
 function displayWeather(response) {
-  console.log(response.data);
   document.querySelector("#city").innerHTML = response.data.name;
   document.querySelector("#temperature").innerHTML = Math.round(
     response.data.main.temp
@@ -19,11 +16,9 @@ function displayWeather(response) {
   document.querySelector("#degree-min").innerHTML = Math.round(
     response.data.main.temp_min
   );
-
   document.querySelector("#speed").innerHTML = Math.round(
     response.data.wind.speed
   );
-
   document.querySelector("#description").innerHTML =
     response.data.weather[0].description;
 
@@ -115,8 +110,6 @@ locationInput.addEventListener("submit", handleSubmit);
 let locationButton = document.querySelector("#location-button");
 locationButton.addEventListener("click", getCurrentLocation);
 
-searchCity("Berlin");
-
 let now = new Date();
 let hours = (now.getHours() < 10 ? "0" : "") + now.getHours();
 let minutes = (now.getMinutes() < 10 ? "0" : "") + now.getMinutes();
@@ -152,3 +145,5 @@ let month = months[now.getMonth()];
 
 let currentDate = document.querySelector("#currentDate");
 currentDate.innerHTML = `${day}, ${date} ${month} ${year}, ${hours}:${minutes}`;
+
+searchCity("Berlin");
